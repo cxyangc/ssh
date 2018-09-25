@@ -20,4 +20,13 @@ public class DefaultController {
         System.out.println(list);
         return "abc";
     }
+    @RequestMapping("")
+    public String index(){
+        String a = "abc";
+        List list = new ArrayList();
+        list.add("sss");
+        System.out.println(1234);
+        System.out.println("mm");
+        return "index/index";
+    }
 }
