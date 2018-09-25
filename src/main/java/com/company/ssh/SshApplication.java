@@ -12,6 +12,7 @@ public class SshApplication extends SpringBootServletInitializer{
 	}
 	@Override
 	protected SpringApplicationBuilder configure( SpringApplicationBuilder builder) {
-		return builder.sources(this.getClass());
+		SpringApplicationBuilder sources = builder.sources(this.getClass());
+		return sources;
 	}
 }
